@@ -9,7 +9,7 @@ const Bio = () => {
         siteMetadata {
           author {
             name
-            dp
+            profile
             bio
             social {
               twitter {
@@ -52,7 +52,7 @@ const Bio = () => {
   return (
     <section className={blogStyles.bio}>
       <section className={blogStyles.imgWrapper}>
-        <img src={author.dp} alt="DP" />
+        <img src={author.profile} alt="profile" />
       </section>
       <section className={blogStyles.bioWrapper}>
         <div
