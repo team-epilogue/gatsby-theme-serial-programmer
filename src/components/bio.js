@@ -51,9 +51,6 @@ const Bio = () => {
 
   return (
     <section className={blogStyles.bio}>
-      <section className={blogStyles.imgWrapper}>
-        <img src={author.profile} alt="profile" />
-      </section>
       <section className={blogStyles.bioWrapper}>
         <div
           className={blogStyles.textWrapper}
