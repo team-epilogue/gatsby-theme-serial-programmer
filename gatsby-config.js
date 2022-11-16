@@ -1,7 +1,7 @@
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  siteMetadata: settings.meta
+  siteMetadata: settings.meta,
   plugins: [
     `gatsby-plugin-image`,
     {
