@@ -10,33 +10,28 @@ const Bio = () => {
           author {
             name
             profile
-            bio
-            social {
-              twitter {
-                title
-                url
-                username
-              }
-              github {
-                title
-                url
-                username
-              }
-              dev {
-                title
-                url
-                username
-              }
-              email {
-                title
-                url
-                username
-              }
-              linkedin {
-                title
-                url
-                username
-              }
+            summary
+          }
+          social {
+            twitter {
+              title
+              url
+              username
+            }
+            github {
+              title
+              url
+              username
+            }
+            instagram {
+              title
+              url
+              username
+            }
+            email {
+              title
+              url
+              username
             }
           }
         }
@@ -46,16 +41,13 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social_ids = data.site.siteMetadata?.author?.social
+  const social_ids = data.site.siteMetadata?.social
   const _social_ids = Object.keys(social_ids)
 
   return (
     <section className={blogStyles.bio}>
       <section className={blogStyles.bioWrapper}>
-        <div
-          className={blogStyles.textWrapper}
-          dangerouslySetInnerHTML={{ __html: author.bio }}
-        />
+        <div>{author.summary}</div>
         <div className={blogStyles.socialWrapper}>
           {_social_ids.map((social_id, i) => (
             <a

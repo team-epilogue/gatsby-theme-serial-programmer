@@ -1,7 +1,7 @@
 ---
 template: blog-post
 templateKey: blog-post
-slug: /1668304655157
+slug: /blog/1668304655157
 featuredImage: ./salty_egg.jpg
 featuredimage: /assets/post-image.png
 selectedImage: ./salty_egg.jpg
